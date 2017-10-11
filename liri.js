@@ -1,4 +1,4 @@
-//var twitterKeys = require("./keys.js")
+var twitterKeys = require("./keys.js")
 var request = require("request");
 var fs = require("fs");
 
@@ -35,7 +35,26 @@ if(userCommand === "movie-this"){
 }
 else if(userCommand === "my-tweets"){
 
+	var twitterKeys = require('twitter');
 
+	var client = new twitterKeys;
+
+	var params = {
+
+		screen_name: 'Aaron William',
+		q: '@aaronm20392',
+		count: 20
+
+				};
+				
+	client.get('statuses/user_timeline', params, function(error, tweets, response) {
+		if (!error) {
+			console.log(tweets);
+		}
+		else {
+			console.log(error);
+		}
+	});
 
 
 }
