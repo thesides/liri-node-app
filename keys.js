@@ -1,4 +1,4 @@
-JavaScript
+
 console.log('this is loaded');
 
 var twitterKeys = {
@@ -9,3 +9,8 @@ var twitterKeys = {
 }
 
 module.exports = twitterKeys;
+
+// var spotifyKeys = {
+// 	client_ID: "473258b91ba84e76812cf1a43c05c646",
+// 	client_Secret: "935484472d34452a8961306733270af3"
+// }
